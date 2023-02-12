@@ -30,7 +30,7 @@ export default function Home({ posts }) {
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}
-          className='border border-indigo-900 border-2 border-double m-2 rounded-lg shadow-lg overflow-hidden flex flex-col'
+          className='border border-black border-2 border-double m-2 rounded-lg shadow-lg overflow-hidden flex flex-col'
         >
         <Head>
           <title>Sol Blog</title>        
@@ -41,7 +41,7 @@ export default function Home({ posts }) {
             </a>
           </Link>
           <p className='text-cyan-800 p-4'>{frontmatter.metaDesc}</p>
-          <p className='text-sky-600 p-4 border-black rounded-lg'>{frontmatter.article}</p>
+          <p className='text-sky-600 p-4 border border-black rounded-lg p-2'>{frontmatter.article}</p>
         </div> 
       ))}
     </div>
