@@ -36,7 +36,7 @@ export default function Home({ posts }) {
               <h1 className='p-4 text-lg'>{frontmatter.title}</h1>
             </a>
           </Link>
-          <p className='text-cyan-800'>{frontmatter.metaDesc}</p>
+          <p className='text-cyan-800 p-4'>{frontmatter.metaDesc}</p>
         </div>
       ))}
     </div>
