@@ -11,7 +11,7 @@ export default function Layout({ children }) {
           <span className='mx-auto'>Mosi-sol <small>talk about: solidity-solution</small></span>{' '}
         </div>
       </header>
-      <main className='container mx-auto flex-1'>{children}</main>
+      <main className='container mx-auto flex-1 w-full'>{children}</main>
       <footer className='bg-fuchsia-100 mt-8 py-4'>
         <div className='container mx-auto flex justify-center'>
           &copy; 2023 &nbsp;|&nbsp; Mosi-sol
