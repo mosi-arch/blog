@@ -4,6 +4,7 @@ metaTitle: 'Mosi-sol @github - Blog'
 metaDesc: 'create & remove pool + swap 2 pairs'
 date: '2023-02-12'
 socialImage: images/___.png
+article: 'defi'
 tags:
   - defi
   - solidity
