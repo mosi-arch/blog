@@ -33,12 +33,6 @@ export default function Home({ posts }) {
         >
           <Link href={`/post/${slug}`}>
             <a>
-              <Image
-                width={650}
-                height={340}
-                alt={frontmatter.title}
-                src={`/${frontmatter.socialImage}`}
-              />
               <h1 className='p-4'>{frontmatter.title}</h1>
             </a>
           </Link>
