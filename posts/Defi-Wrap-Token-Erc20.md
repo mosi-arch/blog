@@ -4,6 +4,7 @@ metaTitle: 'Mosi-sol @github - Blog'
 metaDesc: 'wrapped erc20 token'
 date: '2023-02-12'
 socialImage: images/___.svg
+article: 'defi'
 tags:
   - defi
   - solidity
