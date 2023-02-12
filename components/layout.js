@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Layout({ children }) {
   return (
     <div className='flex flex-col min-h-screen'>
-      <header className='bg-fuchsia-100 mb-8 py-4'>
+      <header className='bg-fuchsia-100 mb-8 py-4 shadow'>
         <div className='container mx-auto flex justify-center'>
           <Link href='/'>
             <a className='text-3xl font-bold'>HOME</a>
@@ -17,7 +17,7 @@ export default function Layout({ children }) {
           <Link href='https://sol-app.github.io/mosi-sol/'>
             <a className='text-base font-light ml-3'>Portfolio</a>
           </Link>
-          <span className='text-2xl mx-auto font-medium'>Mosi-sol <small className='font-light text-blue-700'>talk about: solidity-solution</small></span>{' '}
+          <span className='text-base mx-auto font-medium'>Mosi-sol</span>{' '}
         </div>
       </header>
       <main className='container mx-auto flex-1 w-full'>{children}</main>
