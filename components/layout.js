@@ -1,7 +1,15 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function Layout({ children }) {
   return (
+    <Head>
+      <title>Sol Blog</title>
+      <meta property="og:title" content="Sol Blog" key="title" />
+    </Head>
+    <Head>
+      <meta property="og:title" content="Sol Blog" key="title" />
+    </Head>
     <div className='flex flex-col min-h-screen'>
       <header className='bg-fuchsia-100 mb-8 py-4'>
         <div className='container mx-auto flex justify-center'>
