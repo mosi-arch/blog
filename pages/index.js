@@ -41,7 +41,7 @@ export default function Home({ posts }) {
             </a>
           </Link>
           <p className='text-black p-4'>{frontmatter.metaDesc}</p>
-          <p className='text-sky-800 p-4'>{frontmatter.article}</p>
+          <p className='text-sky-400 p-4'>{frontmatter.article}</p>
         </div> 
       ))}
     </div>
