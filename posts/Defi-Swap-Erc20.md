@@ -5,7 +5,7 @@ metaDesc: 'create & remove pool + swap 2 pairs'
 date: '2023-02-12'
 socialImage: images/___.png
 tags:
-  - github
+  - defi
   - solidity
   - swap
 ---
