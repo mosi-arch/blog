@@ -12,11 +12,6 @@ export default function Layout({ children }) {
         </div>
       </header>
       <main className='container mx-auto flex-1 w-full'>{children}</main>
-      <div>
-      <hr>
-        <a href="https://awesome-github-stats.azurewebsites.net/user-stats/mosi-sol?cardType=level&theme=github&preferLogin=false&Ring=8B4BDD&Title=8F51DD)](https://git.io/awesome-stats-card"></a>
-        <a href="https://github-readme-stats.vercel.app/api/top-langs/?username=mosi-sol&layout=compact"></a>
-      </div>
       <footer className='bg-fuchsia-100 mt-8 py-4'>
         <div className='container mx-auto flex justify-center text-xl'>
           &copy; 2023 &nbsp;|&nbsp; Mosi-sol
