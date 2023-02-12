@@ -4,6 +4,7 @@ metaTitle: 'Mosi-sol @github - Content sheet & information'
 metaDesc: 'defi - crowd fundraising, campagin'
 date: '2023-02-12'
 socialImage: images/___.svg
+article: 'defi'
 tags:
   - defi
   - solidity
