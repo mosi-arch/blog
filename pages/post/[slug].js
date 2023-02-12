@@ -28,9 +28,9 @@ export async function getStaticProps({ params: { slug } }) {
 
 export default function PostPage({ frontmatter, content }) {
   return (
-    <div className='prose grid grid-cols-1'>
+    <div className='prose grid grid-cols-1 mx-auto flex-1 w-full'>
       <h1 className='text-2xl'>{frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+      <div className='grid grid-cols-1' dangerouslySetInnerHTML={{ __html: md().render(content) }} />
     </div>
   );
 }
