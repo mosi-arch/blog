@@ -40,8 +40,8 @@ export default function Home({ posts }) {
               <h1 className='p-4 text-lg'>{frontmatter.title}</h1>
             </a>
           </Link>
-          <p className='text-cyan-800 p-4'>{frontmatter.metaDesc}</p>
-          <p className='text-sky-600 p-4 border border-black rounded-lg p-2'>{frontmatter.article}</p>
+          <p className='text-sky-800 p-4'>{frontmatter.metaDesc}</p>
+          <p className='text-black p-4'>{frontmatter.article}</p>
         </div> 
       ))}
     </div>
