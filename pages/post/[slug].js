@@ -28,11 +28,11 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 export default function PostPage({ frontmatter, content }) {
-  return (    
-    <Head>
-      <title>Sol Blog | {frontmatter.title}</title>        
-    </Head>
-    <div className='prose grid grid-cols-1 mx-auto flex-1 w-full'>
+  return (   
+    <div className='prose grid grid-cols-1 mx-auto flex-1 w-full'> 
+      <Head>
+        <title>Sol Blog | {frontmatter.title}</title>        
+      </Head>
       <h1 className='text-2xl'>{frontmatter.title}</h1>
       <div className='grid grid-cols-1' dangerouslySetInnerHTML={{ __html: md().render(content) }} />
     </div>
