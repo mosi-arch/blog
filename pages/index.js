@@ -37,11 +37,11 @@ export default function Home({ posts }) {
         </Head>
           <Link href={`/post/${slug}`}>
             <a>
-              <h1 className='p-4 text-lg'>{frontmatter.title}</h1>
+              <h1 className='p-4 text-sky-800 text-lg'>{frontmatter.title}</h1>
             </a>
           </Link>
-          <p className='text-sky-800 p-4'>{frontmatter.metaDesc}</p>
-          <p className='text-black p-4'>{frontmatter.article}</p>
+          <p className='text-black p-4'>{frontmatter.metaDesc}</p>
+          <p className='text-sky-800 p-4'>{frontmatter.article}</p>
         </div> 
       ))}
     </div>
