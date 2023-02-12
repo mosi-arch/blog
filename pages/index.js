@@ -26,15 +26,15 @@ export async function getStaticProps() {
 
 export default function Home({ posts }) {
   return (
-    <Head>
-      <title>Sol Blog</title>        
-    </Head>
     <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0'>
       {posts.map(({ slug, frontmatter }) => (
         <div
           key={slug}
           className='border border-sky-900 border-2 border-double m-2 rounded-xl shadow-lg overflow-hidden flex flex-col'
         >
+        <Head>
+          <title>Sol Blog</title>        
+        </Head>
           <Link href={`/post/${slug}`}>
             <a>
               <h1 className='p-4 text-lg'>{frontmatter.title}</h1>
