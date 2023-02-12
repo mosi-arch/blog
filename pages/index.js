@@ -37,7 +37,7 @@ export default function Home({ posts }) {
             </a>
           </Link>
           <p className='text-cyan-800 p-4'>{frontmatter.metaDesc}</p>
-        </div>
+        </div> 
       ))}
     </div>
   );
