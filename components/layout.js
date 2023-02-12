@@ -8,7 +8,7 @@ export default function Layout({ children }) {
           <Link href='/'>
             <a className='text-3xl font-bold'>HOME</a>
           </Link>
-          <span className='mx-auto'>Mosi-sol <small className='text-2xl text-blue-700'>talk about: solidity-solution</small></span>{' '}
+          <span className='text-2xl mx-auto font-medium'>Mosi-sol <small className='font-light text-blue-700'>talk about: solidity-solution</small></span>{' '}
         </div>
       </header>
       <main className='container mx-auto flex-1 w-full'>{children}</main>
