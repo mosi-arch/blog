@@ -31,9 +31,10 @@ export default function PostPage({ frontmatter, content }) {
     <div className='prose grid grid-cols-1 mx-auto flex-1 w-full'>
       <h1 className='text-2xl'>{frontmatter.title}</h1>
       <div className='grid grid-cols-1' dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+      <hr>
+      <img src="https://awesome-github-stats.azurewebsites.net/user-stats/mosi-sol?cardType=level&theme=github&preferLogin=false&Ring=8B4BDD&Title=8F51DD)](https://git.io/awesome-stats-card" />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mosi-sol&layout=compact" />
     </div>
-    <hr>
-    <img src="https://awesome-github-stats.azurewebsites.net/user-stats/mosi-sol?cardType=level&theme=github&preferLogin=false&Ring=8B4BDD&Title=8F51DD)](https://git.io/awesome-stats-card" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mosi-sol&layout=compact" />
+    
   );
 }
