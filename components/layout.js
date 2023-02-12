@@ -8,6 +8,15 @@ export default function Layout({ children }) {
           <Link href='/'>
             <a className='text-3xl font-bold'>HOME</a>
           </Link>
+          <Link href='https://github.com/mosi-sol'>
+            <a className='text-3xl font-bold'>Github</a>
+          </Link>
+          <Link href='https://sol-app.github.io/resume/'>
+            <a className='text-3xl font-bold'>Resume</a>
+          </Link>
+          <Link href='https://sol-app.github.io/mosi-sol/'>
+            <a className='text-3xl font-bold'>Portfolio</a>
+          </Link>
           <span className='text-2xl mx-auto font-medium'>Mosi-sol <small className='font-light text-blue-700'>talk about: solidity-solution</small></span>{' '}
         </div>
       </header>
