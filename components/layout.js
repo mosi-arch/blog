@@ -6,14 +6,14 @@ export default function Layout({ children }) {
       <header className='bg-fuchsia-100 mb-8 py-4'>
         <div className='container mx-auto flex justify-center'>
           <Link href='/'>
-            <a>HOME</a>
+            <a className='text-3xl font-bold'>HOME</a>
           </Link>
-          <span className='mx-auto'>Mosi-sol <small>talk about: solidity-solution</small></span>{' '}
+          <span className='mx-auto'>Mosi-sol <small className='text-2xl text-blue-700'>talk about: solidity-solution</small></span>{' '}
         </div>
       </header>
       <main className='container mx-auto flex-1 w-full'>{children}</main>
       <footer className='bg-fuchsia-100 mt-8 py-4'>
-        <div className='container mx-auto flex justify-center'>
+        <div className='container mx-auto flex justify-center text-xl'>
           &copy; 2023 &nbsp;|&nbsp; Mosi-sol
         </div>
       </footer>
