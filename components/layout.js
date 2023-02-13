@@ -34,7 +34,7 @@ export default function Layout({ children }) {
             </div>	
           </div>
         </nav>
-      <main className='container mx-auto flex-1 w-full'>{children}</main>
+      <main className='container mx-auto flex-1 w-full my-4'>{children}</main>
       <footer className='text-center lg:text-left mt-8 bg-gradient-to-b from-gray-200 to-white'>
         <div className='text-black text-center p-4'>© 2023 &nbsp;|&nbsp; Mosi-sol</div>
       </footer>
