@@ -35,8 +35,8 @@ export default function Layout({ children }) {
           </div>
         </nav>
       <main className='container mx-auto flex-1 w-full'>{children}</main>
-      <footer className='text-center lg:text-left mt-8 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'>
-        <div className='text-gray-700 text-center p-4'>© 2023 &nbsp;|&nbsp; Mosi-sol</div>
+      <footer className='text-center lg:text-left mt-8 bg-gradient-to-b from-gray-900 via-gray-700 to-black'>
+        <div className='text-white text-center p-4'>© 2023 &nbsp;|&nbsp; Mosi-sol</div>
       </footer>
     </div>
   );
