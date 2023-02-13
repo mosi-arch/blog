@@ -3,15 +3,18 @@ import Link from 'next/link';
 export default function Layout({ children }) {
   return (
     <div className='flex flex-col min-h-screen'>
-      <nav class="navbar navbar-expand-lg shadow-lg py-2 bg-gray-50 relative flex items-center w-full justify-between">
+      <nav class="navbar navbar-expand-lg shadow-lg py-2 bg-gray-50 relative flex items-center w-full justify-between mb-4">
           <div class="px-6">    
             <div class="navbar-collapse collapse grow items-center" id="navbarSupportedContentX">
             <ul class="navbar-nav mr-auto flex flex-row">
               <li class="nav-item">
-                <Link href='/'>
-                <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light">BLOG</a>
-                </Link>
+                <h3 class="block pr-2 lg:px-2 py-2 text-black mr-4" data-mdb-ripple="true" data-mdb-ripple-color="light">SOL-BLOG</h3>
               </li>
+              <li class="nav-item">
+                <Link href='/'>
+                <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light">Home</a>
+                </Link>
+              </li>              
               <li class="nav-item">
                 <Link href='https://github.com/mosi-sol'>
                 <a class="nav-link block pr-2 lg:px-2 py-2 text-gray-600 hover:text-gray-700 focus:text-gray-700 transition duration-150 ease-in-out" data-mdb-ripple="true" data-mdb-ripple-color="light">Github</a>
