@@ -26,6 +26,7 @@ export async function getStaticProps() {
 
 export default function Home({ posts }) {
   return (
+    <b>{frontmatter.article}</b><hr>
     <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0'>
       {posts.map(({ slug, frontmatter }) => (
           <div
