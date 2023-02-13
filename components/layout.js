@@ -8,7 +8,7 @@ export default function Layout({ children }) {
             <div class="navbar-collapse collapse grow items-center" id="navbarSupportedContentX">
             <ul class="navbar-nav mr-auto flex flex-row">
               <li class="nav-item">
-                <h3 class="block pr-2 lg:px-2 py-2 text-black mr-4" data-mdb-ripple="true" data-mdb-ripple-color="light">SOL-BLOG</h3>
+                <h3 class="block pr-2 lg:px-2 py-2 text-black mr-5 text-xl" data-mdb-ripple="true" data-mdb-ripple-color="light">SOL-BLOG</h3>
               </li>
               <li class="nav-item">
                 <Link href='/'>
