@@ -35,7 +35,7 @@ export default function Home({ posts }) {
               <Head>
                 <title>Sol Blog</title>        
               </Head>
-              <div>
+              <div className='mx-2'>
                 <Link href={`/post/${slug}`}>
                   <a>
                     <h1 className='text-xl font-semibold capitalize text-black hover:text-blue-900'>{frontmatter.title}</h1>
