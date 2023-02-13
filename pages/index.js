@@ -26,11 +26,11 @@ export async function getStaticProps() {
 
 export default function Home({ posts }) {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 p-4 md:p-0'>
+    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 px-2 py-4 md:p-1'>
       {posts.map(({ slug, frontmatter }) => (
           <div
             key={slug}
-            className='p-3 max-w-sm mx-auto bg-slate-100 hover:bg-slate-200 rounded-xl shadow-md flex items-center space-x-4 divide-y divide-slate-600 divide-solid mb-4 w-full shadow-2xl'
+            className='max-w-sm mx-auto bg-slate-100 hover:bg-slate-200 rounded-xl shadow-md flex items-center space-x-4 divide-y divide-slate-600 divide-solid mb-4 w-full shadow-2xl'
           >
               <Head>
                 <title>Sol Blog</title>        
