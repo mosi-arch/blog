@@ -35,8 +35,8 @@ export default function PostPage({ frontmatter, content }) {
         </Head>
         <h1 className='text-2xl'>
           {frontmatter.title} 
-           &nbsp; <small className='text-sm bg-gray-500 text-white rounded-md p-2 shadow hover:shadow-lg'>{frontmatter.article}</small>
         </h1>
+        <small className='text-sm bg-blue-500 text-white rounded-md p-2 shadow hover:shadow-lg'>{frontmatter.article}</small>
         <div className='shadow-lg grid grid-cols-1' dangerouslySetInnerHTML={{ __html: md().render(content) }} />
       </div>
     
