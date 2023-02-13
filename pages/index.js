@@ -30,7 +30,7 @@ export default function Home({ posts }) {
       {posts.map(({ slug, frontmatter }) => (
           <div
             key={slug}
-            className='p-4 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4 divide-y divide-slate-600 divide-solid mb-2'
+            className='p-4 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4 divide-y divide-slate-600 divide-solid mb-2 w-full'
           >
               <Head>
                 <title>Sol Blog</title>        
