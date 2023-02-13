@@ -34,7 +34,7 @@ export default function PostPage({ frontmatter, content }) {
           <title>Sol Blog | {frontmatter.title}</title>        
         </Head>
         <h1>
-          <span className='text-2xl'>{frontmatter.title}</span>
+          <span className='text-2xl mr-4'>{frontmatter.title}</span>
           <small className='text-sm bg-blue-500 text-white rounded-md p-2 shadow hover:shadow-lg'>{frontmatter.article}</small>
         </h1>
         
