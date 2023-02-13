@@ -29,13 +29,13 @@ export async function getStaticProps({ params: { slug } }) {
 
 export default function PostPage({ frontmatter, content }) {
   return (   
-    <div className='prose md:prose-lg lg:prose-xl px-4 grid grid-cols-1 mx-auto flex-1 w-full'> 
+    <div className='prose md:prose-lg lg:prose-xl px-4'> <!--  grid grid-cols-1 mx-auto flex-1 w-full -->
         <Head>
           <title>Sol Blog | {frontmatter.title}</title>        
         </Head>
         <h1>
           <span className='text-2xl mr-4'>{frontmatter.title}</span>
-          <small className='text-sm bg-blue-500 text-white rounded-md p-2 font-thin uppercase transition duration-150 ease-in-out' data-mdb-ripple="true" data-mdb-ripple-color="light">{frontmatter.article}</small>
+          <small className='text-sm bg-blue-500 text-white rounded-md p-2 font-thin uppercase' data-mdb-ripple="true" data-mdb-ripple-color="light">{frontmatter.article}</small>
         </h1>        
         <div className='shadow-lg grid grid-cols-1 prose' dangerouslySetInnerHTML={{ __html: md().render(content) }} />
         <nav className="rounded-md w-full">
