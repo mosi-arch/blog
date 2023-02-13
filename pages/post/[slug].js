@@ -35,7 +35,7 @@ export default function PostPage({ frontmatter, content }) {
         </Head>
         <h1>
           <span className='text-2xl mr-4'>{frontmatter.title}</span>
-          <small className='text-sm bg-blue-500 text-white rounded-md p-2 font-thin uppercase'>{frontmatter.article}</small>
+          <small className='text-sm bg-blue-500 text-white rounded-md p-2 font-thin uppercase transition duration-150 ease-in-out' data-mdb-ripple="true" data-mdb-ripple-color="light">{frontmatter.article}</small>
         </h1>        
         <div className='shadow-lg grid grid-cols-1' dangerouslySetInnerHTML={{ __html: md().render(content) }} />
         <nav className="rounded-md w-full">
