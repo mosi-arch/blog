@@ -17,7 +17,7 @@ export default function Layout({ children }) {
           <Link href='https://sol-app.github.io/mosi-sol/'>
             <a className='text-base font-light ml-3'>Portfolio</a>
           </Link>
-          <span className='text-base mx-auto text-xl'>Mosi-sol Blog</span>{' '}
+          <span className='text-base mx-auto text-xl font-bold'>Mosi-sol Blog</span>{' '}
         </div>
       </header>
       <main className='container mx-auto flex-1 w-full'>{children}</main>
