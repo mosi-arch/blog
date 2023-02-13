@@ -29,7 +29,7 @@ export async function getStaticProps({ params: { slug } }) {
 
 export default function PostPage({ frontmatter, content }) {
   return (   
-    <div className='prose lg:prose-xl grid grid-cols-1 mx-auto flex-1 w-full'> 
+    <div className='prose lg:prose-xl px-4 grid grid-cols-1 mx-auto flex-1 w-full'> 
         <Head>
           <title>Sol Blog | {frontmatter.title}</title>        
         </Head>
