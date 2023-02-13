@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Layout({ children }) {
   return (
     <div className='flex flex-col min-h-screen'>
-      <nav class="navbar navbar-expand-lg shadow-lg py-2 bg-gray-50 relative flex items-center w-full justify-between mb-4">
+      <nav class="navbar navbar-expand-lg shadow-lg py-2 bg-gray-50 relative flex items-center w-full justify-between mb-8">
           <div class="px-6">    
             <div class="navbar-collapse collapse grow items-center" id="navbarSupportedContentX">
             <ul class="navbar-nav mr-auto flex flex-row">
@@ -35,9 +35,9 @@ export default function Layout({ children }) {
           </div>
         </nav>
       <main className='container mx-auto flex-1 w-full'>{children}</main>
-      <footer className='bg-gray-50 text-center lg:text-left'>
+      <footer className='bg-gray-50 text-center lg:text-left mt-8'>
         <div className='text-gray-800 text-center p-4' style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2023 Copyright: Mosi-sol
+          © 2023 &nbsp;|&nbsp; Mosi-sol
         </div>
       </footer>
     </div>
