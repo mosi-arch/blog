@@ -30,7 +30,7 @@ export default function Home({ posts }) {
       {posts.map(({ slug, frontmatter }) => (
           <div
             key={slug}
-            className='p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4'
+            className='p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4 border border-zinc-500'
           >
               <Head>
                 <title>Sol Blog</title>        
@@ -38,11 +38,11 @@ export default function Home({ posts }) {
               <div>
                 <Link href={`/post/${slug}`}>
                   <a>
-                    <h1 className='text-xl font-medium text-black'>{frontmatter.title}</h1>
+                    <h1 className='text-xl font-semibold capitalize text-black hover:text-sky-400'>{frontmatter.title}</h1>
                   </a>
                 </Link>
-                <p className='text-slate-500'>{frontmatter.metaDesc}</p>
-                <p className='text-sky-600'>{frontmatter.article}</p>
+                <p className='text-slate-500 lowercase'>{frontmatter.metaDesc}</p>
+                <p className='text-blue-800 hover:text-sky-400 uppercase'>{frontmatter.article}</p>
               </div>  
           </div> 
       ))}
