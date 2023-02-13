@@ -38,12 +38,10 @@ export default function PostPage({ frontmatter, content }) {
           <small className='text-sm bg-blue-500 text-white rounded-md p-2 font-thin uppercase'>{frontmatter.article}</small>
         </h1>        
         <div className='shadow-lg grid grid-cols-1' dangerouslySetInnerHTML={{ __html: md().render(content) }} />
-        <nav class="rounded-md w-full">
-          <ol class="list-reset flex">
-            <li><a href="/" class="text-blue-600 hover:text-blue-700">Home</a></li>
-            <li><span class="text-gray-500 mx-2">/</span></li>
-            <li class="text-gray-500">{frontmatter.title}</li>
-          </ol>
+        <nav className="rounded-md w-full">
+            <span><a href="/blog" className="text-blue-600 hover:text-blue-700">Home</a></span>
+            <span><b className="text-gray-500 mx-2">/</b></span>
+            <span><b className="text-gray-500">{frontmatter.title}</b></span>
         </nav>
       </div>
     
