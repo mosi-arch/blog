@@ -34,8 +34,7 @@ export default function PostPage({ frontmatter, content }) {
           <title>Sol Blog | {frontmatter.title}</title>        
         </Head>
         <h1 className='text-2xl'>{frontmatter.title}</h1>
-        <div className='text-xs'>{frontmatter.article}</div>
-        <hr>
+        <small className='text-xs'>{frontmatter.article}</small>
         <div className='shadow-lg grid grid-cols-1' dangerouslySetInnerHTML={{ __html: md().render(content) }} />
       </div>
     
