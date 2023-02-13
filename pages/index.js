@@ -36,16 +36,14 @@ export default function Home({ posts }) {
                 <title>Sol Blog</title>        
               </Head>
               <div>
-                <!--<Link href={`/post/${slug}`}>-->
-                  <a data-bs-toggle="modal" data-bs-target="#exampleModal">
+                
+                  <button data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <h1 className='text-xl font-semibold capitalize text-black hover:text-blue-900'>{frontmatter.title}</h1>
-                  </a>
-                <!--</Link>-->
+                  </button>
+                
                 <p className='text-slate-500 lowercase text-sm'>{frontmatter.metaDesc}</p>
                 <p className='text-blue-800 hover:text-blue-700 uppercase text-xs'>{frontmatter.article}</p>
-              </div>  
-			  
-			  <!-- Modal -->
+              </div>   
 				<div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
 				  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog relative w-auto pointer-events-none">
